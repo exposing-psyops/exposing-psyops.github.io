@@ -15,23 +15,24 @@ function HomepageHeader() {
         <img src="img/logo.png" width={"20%"}></img>
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg button--block col--1 shadow--md"
-            to="/docs/atrocities/us"
-          >
-            🇺🇸 Atrocities
-          </Link>
+        <div className={clsx ("row", styles.buttons)}>
+          <div className="col">
+            <Link
+              className="button button--secondary button--lg button--block col--1 shadow--md"
+              to="/docs/atrocities/us"
+            >
+              🇺🇸 Atrocities
+            </Link>
+          </div>
+          <div className="col">
+            <Link
+              className="button button--secondary button--lg button--block col--2 col--offset-1 shadow--md"
+              to="/docs/feds"
+            >
+              🌎 Government Assets
+            </Link>
+          </div>
         </div>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg button--block col--2 col--offset-1 shadow--md"
-            to="/docs/feds"
-          >
-            🌎 Government Assets
-          </Link>
-        </div>
-      </div>
     </header>
   );
 }
