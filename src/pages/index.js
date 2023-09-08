@@ -17,7 +17,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg button--block col--1 shadow--md"
             to="/docs/atrocities/us"
           >
             🇺🇸 Atrocities
@@ -25,7 +25,7 @@ function HomepageHeader() {
         </div>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className="button button--secondary button--lg button--block col--2 col--offset-1 shadow--md"
             to="/docs/feds"
           >
             🌎 Government Assets
